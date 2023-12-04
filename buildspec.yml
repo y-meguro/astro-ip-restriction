@@ -9,5 +9,6 @@ phases:
       - run: yarn install --frozen-lockfile
       - run: yarn build
 artifacts:
+  base-directory: dist
   files:
     - '**/*'
