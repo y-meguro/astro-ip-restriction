@@ -4,7 +4,7 @@ import { newtClient } from '../lib/newt'
 import type { Article } from '../lib/newt'
 
 const { items: articles } = await newtClient.getContents<Article>({
-  appUid: 'blog',
+  appUid: 'blog-301444',
   modelUid: 'article',
   query: {
     select: ['title', 'slug', 'body'],
