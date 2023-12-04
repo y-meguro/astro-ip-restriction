@@ -8,3 +8,6 @@ phases:
           node-version: 18
       - run: yarn install --frozen-lockfile
       - run: yarn build
+artifacts:
+  files:
+    - '**/*'
