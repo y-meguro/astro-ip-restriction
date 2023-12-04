@@ -1,0 +1,10 @@
+version: 0.2
+
+phases:
+  build:
+    steps:
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - run: yarn install --frozen-lockfile
+      - run: yarn build
